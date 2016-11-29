@@ -1,0 +1,23 @@
+Login Application
+ ☐ Cookies
+ ☐ Adding json data
+ ☐ updating json data
+ ☐ removing json data
+ ☐ json-server
+ 
+Archive:
+ ✔ HandleBars @done (16-11-21 06:49)
+ ✔ should have login page @done (16-11-21 06:48)
+ ✔ should have landing page @done (16-11-21 06:48)
+ ✔ should have dashboard @done (16-11-21 06:49)
+ ✔ should register page @done (16-11-21 06:49)
+ ✔ Reading json data @done (16-11-10 08:28)
+ ✔ Dashboard - if the user has successfully logged in, it will redirect to the dashboard @done (16-11-10 08:28)
+ ✔ create server.js @done (16-11-10 08:27)
+ ✔ Run Server @done (16-11-10 08:27)
+ ✔ Login Authenticator - user must enter a valid username and password within the json file @done (16-11-10 08:27)
+ ✔ Install express  @done (16-11-10 08:27)
+ ✔ Install Node @done (16-11-10 08:27)
+ ✔ Create remote repo using Github @done (16-11-10 08:27)
+ ✔ Create an account - The user must register if he/she doesnt have an account @done (16-11-10 08:27)
+ ✔ Create Json File @done (16-11-10 08:27)

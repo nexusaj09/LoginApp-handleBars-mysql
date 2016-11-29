@@ -30,9 +30,9 @@ for ( x = 0; x < txtlength ; x++)
 if(username == user && password == pass)
       {
 
-      sessionStorage.setItem('Logics_loggedin', user);	
       	    window.document.location.href = '/dashboard';
- 	   
+       sessionStorage.setItem('Logics_loggedin', user);
+
 
       }
        else	 if ((username == null || username == "") && ( password== null || password ==""))

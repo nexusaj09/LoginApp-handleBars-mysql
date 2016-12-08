@@ -1,14 +1,38 @@
 {
-  "name": "v",
+  "name": "webapp",
   "version": "1.0.0",
   "description": "Login Application",
-  "main": "index.js",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "chao": "^1.0.3",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.12.0",
+    "reload": "^1.1.0",
+    "wdio": "^0.3.3",
+    "wdio-mocha-framework": "^0.5.4",
+    "webdriverio": "^4.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "wdio-spec-reporter": "0.0.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexusaj09/LoginApp-handleBars-mysql.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "mysql": "^2.12.0"
-  }
+  "bugs": {
+    "url": "https://github.com/nexusaj09/LoginApp-handleBars-mysql/issues"
+  },
+  "homepage": "https://github.com/nexusaj09/LoginApp-handleBars-mysql#readme"
 }

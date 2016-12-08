@@ -85,13 +85,28 @@ if(username == user && password == pass)
 });
   $("#dboardlogout").click(function(){
  sessionStorage.setItem('Logics_loggedin', 'talas');
-        window.document.location.href = '/login#';
+        window.document.location.href = '/login';
 
       });
-   $("#btnreg").click(function(){
+      $("#lo").click(function(){
+ sessionStorage.setItem('Logics_loggedin', 'talas');
+        window.document.location.href = '/login?#';
 
+      });
+
+   $("#btnreg").click(function(){
+var us = $('#reg-username').val();
+var p = $('#reg-password').val();
+var pv = $('#re-pass').val();
 var valid = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
-	if (!($('#reg-username').val()).match(valid))
+  if (us == null || us =="" && p == null || p == "" && pv == null || pv == "")
+  {
+  document.getElementById("regerror").style.color  = "red";
+    document.getElementById("regerror").innerHTML = "Error: No Input.";
+  $("#regerror").show();
+     $('#regerror').delay(2000).fadeOut();
+  }
+else if (!($('#reg-username').val()).match(valid))
 	{
   document.getElementById("regerror").style.color  = "red";
     document.getElementById("regerror").innerHTML = "Error: Username must contain at least 6 characters, including UPPER/lowercase and numbers.";
@@ -134,6 +149,10 @@ var valid = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
                 });
 
  
+ document.getElementById("regerror").style.color  = "Green";
+    document.getElementById("regerror").innerHTML = "Account Added.";
+  $("#regerror").show();
+     $('#regerror').delay(2000).fadeOut();
 }
 	     
       });

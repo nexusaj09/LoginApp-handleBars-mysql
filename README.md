@@ -18,7 +18,7 @@
 1. run git bash
 2. write $ selenium-standalone install
 3. wait until the installion is finished
-
+```
 ##To test this repository 
 
 ```
